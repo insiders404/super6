@@ -1,0 +1,15 @@
+echo "Enter any value :"
+read n
+i=1
+f1=0
+f2=1
+echo "$f1"
+echo "$f2"
+while [ $i -le $n ]
+do
+f3=`expr $f1 + $f2`
+echo "$f3"
+i=$[ $i + 1 ]
+f1=$f2
+f2=$f3
+done
